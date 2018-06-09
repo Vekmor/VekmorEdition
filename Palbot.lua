@@ -3798,7 +3798,7 @@ function getIslandStuff()
 end
 function clickMagicShop()
   local a = 1
-  local shopString = "magicShopChest"
+  local shopString = "MagicShopChest"
   shopString = shopString .. ".png"
   while a < 7 do
     if existsClick(Pattern(shopString), 1) then
@@ -3807,7 +3807,7 @@ function clickMagicShop()
       break
     else
       a = a + 1
-      shopString = "magicShopChest" .. a .. ".png"
+      shopString = "MagicShopChest" .. a .. ".png"
     end
   end
   battleIconRegion:existsClick(Pattern("iconBattle.png"), 2)
